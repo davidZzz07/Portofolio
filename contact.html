@@ -1,0 +1,140 @@
+<!--  Nama = David Ardiyansyah  -->
+<!-- Nim = 25.12.3447 -->
+<!--  Kelas = Si01  -->
+<!--  Tanggal Pengerjaan = 19-05-2025  -->
+  
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me David</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        :root {
+            --bg-body: #050505;
+            --accent: #00d4ff;
+            --card-bg: #0f0f0f;
+        }
+        body { 
+            background-color: var(--bg-body); 
+            color: white; 
+            font-family: 'Inter', sans-serif; 
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .navbar { background: rgba(5, 5, 5, 0.8); backdrop-filter: blur(15px); border-bottom: 1px solid #1a1a1a; }
+        .nav-link { color: white !important; transition: 0.3s; }
+        .nav-link:hover, .nav-link.active { color: var(--accent) !important; }
+
+        .contact-header { padding: 100px 0 50px; text-align: center; }
+        .contact-header h1 { font-size: 4rem; font-weight: 800; }
+        
+        .contact-card {
+            background: var(--card-bg);
+            border: 1px solid #1a1a1a;
+            border-radius: 30px;
+            padding: 40px;
+            transition: 0.4s;
+            height: 100%;
+            text-decoration: none;
+            color: white;
+            display: block;
+        }
+        .contact-card:hover {
+            border-color: var(--accent);
+            transform: translateY(-10px);
+            background: #121212;
+        }
+        .icon-circle {
+            width: 60px;
+            height: 60px;
+            background: rgba(0, 212, 255, 0.1);
+            color: var(--accent);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .navbar-toggler { filter: invert(1); }
+        @media (max-width: 991px) {
+            .navbar-collapse { background: #111; padding: 20px; border-radius: 15px; margin-top: 10px; }
+            .contact-header h1 { font-size: 2.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+        <a class="navbar-brand text-white fw-bold" href="index.html">David Ardiyansyah<span>.</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="kerjasama.html">Kerjasama</a></li>
+                <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container my-auto">
+    <div class="contact-header">
+        <h1 class="mb-3">Get In <span style="color: var(--accent);">Touch</span></h1>
+        <p class="text-secondary lead">Saya selalu terbuka untuk diskusi proyek, bimbingan, atau sekadar menyapa.</p>
+    </div>
+
+    <div class="row g-4 mb-5">
+        <div class="col-md-4">
+            <a href="https://wa.me/6285709490675" class="contact-card text-center">
+                <div class="icon-circle mx-auto"><i class="bi bi-whatsapp"></i></div>
+                <h4>WhatsApp</h4>
+                <p class="text-secondary">+62 857-0949-0675</p>
+            </a>
+        </div>
+
+        <div class="col-md-4">
+            <a href="mailto:ardiyansyahdavid9@gmail.com" class="contact-card text-center">
+                <div class="icon-circle mx-auto"><i class="bi bi-envelope-at"></i></div>
+                <h4>Email</h4>
+                <p class="text-secondary">ardiyansyahdavid9@gmal.com</p>
+            </a>
+        </div>
+
+        <div class="col-md-4">
+            <a href="https://www.instagram.com/davdz_ardiyan?igsh=MXVwMzU3OWp4N3MxMw==" class="contact-card text-center">
+                <div class="icon-circle mx-auto"><i class="bi bi-instagram"></i></div>
+                <h4>Instagram</h4>
+                <p class="text-secondary">@davdz_ardiyan</p>
+            </a>
+        </div>
+    </div>
+
+    <div class="row mb-5">
+        <div class="col-12">
+            <div class="contact-card">
+                <h4 class="mb-4"><i class="bi bi-geo-alt text-info me-2"></i> Lokasi Saya</h4>
+                <div class="ratio ratio-21x9 rounded-4 overflow-hidden">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d247.08407302332506!2d110.41254774807665!3d-7.75316663431498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a59001b1ba3a5%3A0xa6ca62c40cb9ded6!2sYanto%20kopling!5e0!3m2!1sid!2sid!4v1779181361020!5m2!1sid!2sid" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="mt-auto py-4 border-top border-secondary text-center">
+    <p class="text-secondary mb-0 small">&copy; 2026 Crafted by David Ardiyansyah. </p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
